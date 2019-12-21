@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}blog article{% endblock %}
+{% block content %}
+    <div class="row text-center vertical-middle-sm">
+        <h1>{{ article.title }}</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-8">
+            <p class="text-center"><span>{{ article.author.username }}</span><span
+                    style="margin-left: 20px">{{ publish }}</span></p>
+            <div>{{ article.body }}</div>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h2>广告</h2>
+            <p>Django : https://www.djangoproject.com</p>
+            <img width="200px"
+                 src="https://www.jiustore.com/wp-content/uploads/2016/03/%E7%BE%8E%E5%9B%BD%E5%8D%9A%E5%AE%A2%E8%B5%9A%E9%92%B1%EF%BC%9A%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B%E4%B8%80%E4%B8%AA%E8%B5%9A%E9%92%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.jpg">
+
+
+        </div>
+    </div>
+{% endblock %}
